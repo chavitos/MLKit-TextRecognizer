@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>552891264844-fb5tu3jel9pvifl6scfvcgccga63g108.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.552891264844-fb5tu3jel9pvifl6scfvcgccga63g108</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDM3KmHlikfMHgOwI_4hpaucjCITSxCVe8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>552891264844</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>br.com.icarros.pocMLTextRecognizer</string>
+	<key>PROJECT_ID</key>
+	<string>poc-ml-kit-87c47</string>
+	<key>STORAGE_BUCKET</key>
+	<string>poc-ml-kit-87c47.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:552891264844:ios:a4743f8d023c081b</string>
+	<key>DATABASE_URL</key>
+	<string>https://poc-ml-kit-87c47.firebaseio.com</string>
+</dict>
+</plist>
