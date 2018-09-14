@@ -18,6 +18,8 @@
 		E9BDE26B214AE096006E474B /* pocMLTextRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BDE26A214AE096006E474B /* pocMLTextRecognizerTests.swift */; };
 		E9BDE276214AE096006E474B /* pocMLTextRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BDE275214AE096006E474B /* pocMLTextRecognizerUITests.swift */; };
 		E9BDE284214AE260006E474B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9BDE283214AE260006E474B /* GoogleService-Info.plist */; };
+		E9F19974214C026C00812FCE /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F19973214C026C00812FCE /* CamViewController.swift */; };
+		E9F19976214C26A000812FCE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F19975214C26A000812FCE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		E9BDE275214AE096006E474B /* pocMLTextRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pocMLTextRecognizerUITests.swift; sourceTree = "<group>"; };
 		E9BDE277214AE096006E474B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9BDE283214AE260006E474B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9F19973214C026C00812FCE /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
+		E9F19975214C26A000812FCE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EDBF268A68E8E9DAAA5BC01F /* Pods_pocMLTextRecognizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pocMLTextRecognizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,11 +145,13 @@
 			children = (
 				E9BDE283214AE260006E474B /* GoogleService-Info.plist */,
 				E9BDE255214AE094006E474B /* AppDelegate.swift */,
-				E9BDE257214AE094006E474B /* ViewController.swift */,
 				E9BDE259214AE094006E474B /* Main.storyboard */,
 				E9BDE25C214AE095006E474B /* Assets.xcassets */,
 				E9BDE25E214AE095006E474B /* LaunchScreen.storyboard */,
 				E9BDE261214AE095006E474B /* Info.plist */,
+				E9BDE257214AE094006E474B /* ViewController.swift */,
+				E9F19973214C026C00812FCE /* CamViewController.swift */,
+				E9F19975214C26A000812FCE /* DetailViewController.swift */,
 			);
 			path = pocMLTextRecognizer;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyCam/SwiftyCam.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -392,6 +399,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyCam.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +414,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F19974214C026C00812FCE /* CamViewController.swift in Sources */,
 				E9BDE258214AE094006E474B /* ViewController.swift in Sources */,
 				E9BDE256214AE094006E474B /* AppDelegate.swift in Sources */,
+				E9F19976214C26A000812FCE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

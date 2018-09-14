@@ -1,52 +1,30 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  pocMLTextRecognizer
 //
-//  Created by Tiago Chaves on 13/09/2018.
+//  Created by Tiago Chaves on 14/09/2018.
 //  Copyright © 2018 iCarros. All rights reserved.
 //
 
 import UIKit
 import FirebaseMLVision
 
-class ViewController: UIViewController {
+class DetailViewController: UIViewController {
 
-    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var plateRecognized: UILabel!
+    @IBOutlet weak var textRecognized: UILabel!
     
+    var photo:UIImage?
     var textDetector:VisionTextDetector!
     let plateRegex = "[A-Z]{3}( |-| -|- | - )?[0-9]{4}"
-    let images = ["placa1","placa2","placa3","placa4","placa5","placa6","placa7"]
-    var imageIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //text detector init
         let vision = Vision.vision()
         textDetector = vision.textDetector()
-        
-        image.image = UIImage(named: images[imageIndex])
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func changeImage(_ sender: Any) {
-    
-        if imageIndex < images.count - 1 {
-            imageIndex += 1
-            image.image = UIImage(named: images[imageIndex])
-        }else{
-            imageIndex = 0
-            image.image = UIImage(named: images[imageIndex])
-        }
-    }
-    
-    @IBAction func captureText(_ sender: Any) {
-        textRecognition(atImage: self.image.image!)
+        textRecognition(atImage: photo!)
     }
     
     func textRecognition(atImage image:UIImage) {
@@ -68,6 +46,7 @@ class ViewController: UIViewController {
             }
         }
         print(textFound)
+        textRecognized.text = textFound
         if let plate = listMatches(for: plateRegex, inString: textFound).first {
             print(plate)
             plateRecognized.text = "Placa: \(plate)"
@@ -90,4 +69,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

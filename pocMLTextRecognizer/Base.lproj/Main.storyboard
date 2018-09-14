@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pocMLTextRecognizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placa1" translatesAutoresizingMaskIntoConstraints="NO" id="M4l-K1-nSm">
-                                <rect key="frame" x="0.0" y="47" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="370"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="geo-pj-A4y"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apX-hT-bec">
-                                <rect key="frame" x="137" y="438" width="101" height="63"/>
+                                <rect key="frame" x="109.5" y="420" width="101" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="mag-EG-NgO"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placa: xxx-nnnn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xre-r2-scx">
-                                <rect key="frame" x="126.5" y="543" width="122" height="46"/>
+                                <rect key="frame" x="99" y="483" width="122" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Ej4-th-OrO"/>
                                 </constraints>
@@ -44,26 +44,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FC-CP-12S">
-                                <rect key="frame" x="136" y="604" width="103" height="43"/>
+                                <rect key="frame" x="0.0" y="398" width="103" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="Wdo-mi-Pyu"/>
+                                    <constraint firstAttribute="height" constant="43" id="6bh-Hn-mkz"/>
                                 </constraints>
                                 <state key="normal" title="Trocar imagem"/>
                                 <connections>
                                     <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abi-ue-Efk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nML-aa-6qR">
+                                <rect key="frame" x="217" y="398" width="103" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="BkB-tr-IMW"/>
+                                </constraints>
+                                <state key="normal" title="Câmera"/>
+                                <connections>
+                                    <segue destination="zfi-Jg-fYx" kind="show" id="4jy-gE-qCC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="apX-hT-bec" firstAttribute="top" secondItem="M4l-K1-nSm" secondAttribute="bottom" constant="21" id="6qA-5M-9IS"/>
-                            <constraint firstItem="M4l-K1-nSm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="7ld-dc-XMK"/>
+                            <constraint firstItem="apX-hT-bec" firstAttribute="top" secondItem="M4l-K1-nSm" secondAttribute="bottom" constant="30" id="6qA-5M-9IS"/>
+                            <constraint firstItem="M4l-K1-nSm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7ld-dc-XMK"/>
                             <constraint firstItem="M4l-K1-nSm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BzT-HS-PrN"/>
-                            <constraint firstItem="xre-r2-scx" firstAttribute="top" secondItem="apX-hT-bec" secondAttribute="bottom" constant="42" id="D0G-s8-SM5"/>
-                            <constraint firstItem="6FC-CP-12S" firstAttribute="top" secondItem="xre-r2-scx" secondAttribute="bottom" constant="15" id="RvR-ia-8EA"/>
+                            <constraint firstItem="xre-r2-scx" firstAttribute="top" secondItem="apX-hT-bec" secondAttribute="bottom" id="D0G-s8-SM5"/>
                             <constraint firstItem="xre-r2-scx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SAY-mm-Oef"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6FC-CP-12S" secondAttribute="trailing" constant="20" symbolic="YES" id="Uze-Y6-CKe"/>
+                            <constraint firstItem="nML-aa-6qR" firstAttribute="top" secondItem="M4l-K1-nSm" secondAttribute="bottom" constant="8" id="XYr-Ld-COJ"/>
                             <constraint firstItem="apX-hT-bec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YiH-C3-dTP"/>
-                            <constraint firstItem="6FC-CP-12S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hh4-Ok-TKB"/>
+                            <constraint firstItem="6FC-CP-12S" firstAttribute="top" secondItem="M4l-K1-nSm" secondAttribute="bottom" constant="8" id="ZNk-Pq-PpH"/>
+                            <constraint firstItem="nML-aa-6qR" firstAttribute="width" secondItem="6FC-CP-12S" secondAttribute="width" id="hAd-We-akp"/>
+                            <constraint firstItem="6FC-CP-12S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="npF-mT-Cbr"/>
+                            <constraint firstItem="nML-aa-6qR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="oWc-t1-alt"/>
+                            <constraint firstAttribute="trailing" secondItem="nML-aa-6qR" secondAttribute="trailing" id="wkr-M5-IYY"/>
                             <constraint firstItem="M4l-K1-nSm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zZj-pM-bvy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,10 +90,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="135" y="132.04225352112675"/>
+        </scene>
+        <!--Cam View Controller-->
+        <scene sceneID="JwN-9u-atS">
+            <objects>
+                <viewController id="zfi-Jg-fYx" customClass="CamViewController" customModule="pocMLTextRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfy-t7-Qlr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSi-pv-EvB">
+                                <rect key="frame" x="20" y="498" width="280" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K0D-tT-88c"/>
+                                </constraints>
+                                <state key="normal" title="Tirar foto"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="zfi-Jg-fYx" eventType="touchUpInside" id="eQi-vh-y5E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pSi-pv-EvB" firstAttribute="leading" secondItem="e1v-Yb-m7u" secondAttribute="leading" constant="20" id="OjL-AT-PR1"/>
+                            <constraint firstItem="e1v-Yb-m7u" firstAttribute="trailing" secondItem="pSi-pv-EvB" secondAttribute="trailing" constant="20" id="crg-42-MPF"/>
+                            <constraint firstItem="e1v-Yb-m7u" firstAttribute="bottom" secondItem="pSi-pv-EvB" secondAttribute="bottom" constant="20" id="xqO-ct-yBE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e1v-Yb-m7u"/>
+                    </view>
+                    <connections>
+                        <segue destination="4dU-DW-603" kind="show" identifier="camToDetail" id="8nz-DU-Fqx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3HB-PN-qeu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.5" y="130.98591549295776"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="BCG-pE-tk3">
+            <objects>
+                <viewController id="4dU-DW-603" customClass="DetailViewController" customModule="pocMLTextRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAa-Rv-vNG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placa da foto: xxx-1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0J-qc-RaS">
+                                <rect key="frame" x="70" y="274" width="180" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY9-z9-FiR">
+                                <rect key="frame" x="109" y="375" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fD8-M7-38W"/>
+                                </constraints>
+                                <state key="normal" title="Tirar outra foto"/>
+                                <connections>
+                                    <segue destination="zfi-Jg-fYx" kind="show" id="wVt-9E-1po"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfS-aC-ecV">
+                                <rect key="frame" x="139" y="320" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u0J-qc-RaS" firstAttribute="centerY" secondItem="KAa-Rv-vNG" secondAttribute="centerY" id="7Wv-wh-J1R"/>
+                            <constraint firstItem="nY9-z9-FiR" firstAttribute="top" secondItem="u0J-qc-RaS" secondAttribute="bottom" constant="80" id="8LE-Ej-pF7"/>
+                            <constraint firstItem="bfS-aC-ecV" firstAttribute="centerX" secondItem="KAa-Rv-vNG" secondAttribute="centerX" id="MVo-DD-ej7"/>
+                            <constraint firstItem="bfS-aC-ecV" firstAttribute="top" secondItem="u0J-qc-RaS" secondAttribute="bottom" constant="25" id="Q4y-lx-kqK"/>
+                            <constraint firstItem="u0J-qc-RaS" firstAttribute="centerX" secondItem="KAa-Rv-vNG" secondAttribute="centerX" id="Vfd-6u-OqO"/>
+                            <constraint firstItem="nY9-z9-FiR" firstAttribute="centerX" secondItem="KAa-Rv-vNG" secondAttribute="centerX" id="o23-TM-LUf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jm2-Es-bW3"/>
+                    </view>
+                    <connections>
+                        <outlet property="plateRecognized" destination="u0J-qc-RaS" id="GaH-iP-hRv"/>
+                        <outlet property="textRecognized" destination="bfS-aC-ecV" id="eDO-SW-djz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjb-J1-oHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="131"/>
         </scene>
     </scenes>
     <resources>
         <image name="placa1" width="300" height="168"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8nz-DU-Fqx"/>
+        <segue reference="wVt-9E-1po"/>
+    </inferredMetricsTieBreakers>
 </document>

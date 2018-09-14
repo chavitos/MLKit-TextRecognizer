@@ -9,6 +9,7 @@ target 'pocMLTextRecognizer' do
   pod 'Firebase/Core'
   pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionTextModel'
+  pod 'SwiftyCam', :git => 'https://github.com/Awalz/SwiftyCam', :branch => 'Swift4'
 
   target 'pocMLTextRecognizerTests' do
     inherit! :search_paths
